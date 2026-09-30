@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "분석 보고서 만들기",
+      "type": "shell",
+      "command": "py",
+      "args": ["src/make_report.py"],
+      "options": { "cwd": "${workspaceFolder}", "env": { "PYTHONIOENCODING": "utf-8" } },
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": []
+    }
+  ]
+}

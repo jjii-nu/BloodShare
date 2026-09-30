@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "분석 보고서 만들기 (그래프 + HTML)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/make_report.py",
+      "cwd": "${workspaceFolder}",
+      "env": { "PYTHONIOENCODING": "utf-8" },
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "가공 테이블만 다시 만들기",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/build_processed.py",
+      "cwd": "${workspaceFolder}",
+      "env": { "PYTHONIOENCODING": "utf-8" },
+      "console": "integratedTerminal"
+    }
+  ]
+}
