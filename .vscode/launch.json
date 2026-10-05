@@ -7,7 +7,20 @@
       "request": "launch",
       "program": "${workspaceFolder}/src/make_report.py",
       "cwd": "${workspaceFolder}",
-      "env": { "PYTHONIOENCODING": "utf-8" },
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "L1 수급 전망 보고서 만들기",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/make_l1_report.py",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      },
       "console": "integratedTerminal"
     },
     {
@@ -16,7 +29,9 @@
       "request": "launch",
       "program": "${workspaceFolder}/src/build_processed.py",
       "cwd": "${workspaceFolder}",
-      "env": { "PYTHONIOENCODING": "utf-8" },
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      },
       "console": "integratedTerminal"
     }
   ]

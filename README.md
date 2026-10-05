@@ -25,7 +25,8 @@ VS Code에서 이 폴더를 열고 아래 중 하나를 하면 된다.
 
 | 결과 | 내용 |
 |---|---|
-| `reports/report.html` | 그래프와 "쉽게 말하면" 설명이 들어간 보고서. 파일 하나라 그대로 공유 가능 |
+| `reports/report.html` | 그래프와 "쉽게 말하면" 설명이 들어간 탐색 보고서 (L1·L2). 파일 하나라 그대로 공유 가능 |
+| `reports/l1_report.html` | **L1 수급 전망 모형** 결과 (2026–2040, 인구 시나리오·정책 비교). F5 목록에서 `L1 수급 전망 보고서 만들기` 또는 `py src/make_l1_report.py` |
 | `reports/figures/*.png` | 그래프 7개. 발표 자료에 그대로 붙여 넣기용 |
 | `data/processed/*.csv` | 분석용 가공 테이블 |
 
@@ -84,6 +85,8 @@ VS Code에서 이 폴더를 열고 아래 중 하나를 하면 된다.
 | `data/reference/` | 정부 계획서 등 참고 문서 |
 | `src/build_processed.py` | 원본 → 가공 테이블 |
 | `src/analysis.py` | L1·L2 분석 계산 (연령·직업·헌혈자, 월별·요일별 부족, 지속성) |
-| `src/make_report.py` | 그래프와 보고서 생성 |
+| `src/make_report.py` | 탐색 그래프와 보고서 생성 |
+| `src/l1_model.py` | L1 코호트 회계모형 + 몬테카를로 (헌혈률 × 장래인구, 정책 시나리오) |
+| `src/make_l1_report.py` | L1 결과 그래프와 보고서 생성 |
 | `docs/proposal.md` | 연구 구조와 가정·한계 |
 | `reports/` | 생성된 보고서와 그래프 |
